@@ -54,6 +54,14 @@
 	color: black !important;
 }
 
+#log-in{
+	width:100%;
+
+}
+.new-account{
+	text-align:center;
+	padding: 0;
+}
 
 /************ Extra-Small Size ***********/
 @media screen and (max-width: 767px) {
