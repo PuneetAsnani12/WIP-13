@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>LNMIIT Library</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width initial-scale=1.0">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="icon" href="favicon.ico">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+  	<script src="scroll_script.js"></script>
+</head>
+<body style="background-color:#eeeeee !important;">
+
+	<!-- *********Scroll Button********* -->
+
+	<a href="#" id="scroll" style="display: none;"><span></span></a>
+    
+    <!-- ***********Navbar********** -->
+
+    <nav class="navbar navbar-default navbar-fixed-top">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+        	        <span class="icon-bar"></span>
+        	        <span class="icon-bar"></span>
+      	        </button>
+				<a href="index.html" class="navbar-brand"><img src="images/logo.png"></a>
+			</div>
+			<div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav">
+				<li ><a href="index.html"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+				<li class="active"><a href="login.html"><!----<span class="glyphicon glyphicon-log-in"></span>-->Hello, Einstein_007</a></li>
+			    </ul>
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="#"><i class="fas fa-question-circle"></i> Help</a></li>
+				<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fas fa-info-circle"></i> About <span class="caret"></span></a>
+					<ul class="dropdown-menu">
+					<li><a href="about/index.html">About Library</a></li>
+					<li><a href="about/rules.html">Rules & Regulations</a></li>
+					<li><a href="about/contact.html">Contact Us</a></li>
+        	        </ul>
+      	        </li>
+			</ul>
+			</div>
+		</div>
+    </nav>
+	
+	<div class="jumbotron">
+		<h1>Welcome to Dashboard.</h1>
+	</div>
+	
+	<div class="container" style="margin-top: 20px; margin-bottom: 20px;">
+		<div class="row">
+			<div class="col-md-4 col-sm-5" style="background-color:white;">
+				<div class="user-name">
+					<img src="images/user.png" alt="User Image" class="img-thumbnail">
+					<p class="username">Einstein_007</p>
+					<p class="user-type">Student</p>
+				</div>
+				<div class="user-details">
+					<dl class="dl-horizontal metadata usr">
+						<dt>Full Name:</dt>
+						<dd>Albert Einstein</dd>
+						<dt>Roll No.:</dt>
+						<dd>17abc007</dd>
+						<dt>Mobile:</dt>
+						<dd>9876543210</dd>
+					</dl>
+				</div>
+			</div>
+			<div class="col-md-8 col-sm-7 dash-box">
+				<ul class="nav nav-tabs">
+					<li class="active"><a href="#1a" data-toggle="tab">Issued Books</a></li>
+					<li><a href="#2a" data-toggle="tab">Saved Books</a></li>
+				</ul>
+				<div class="tab-content clearfix">
+					<div class="tab-pane active" id="1a">
+						<span class="col-md-12 col-xs-12 col-sm-12 "> <span class="col-sm-6 col-md-6 col-xs-6 issue1">Issued Books</span> <span class="col-sm-6 col-md-6  col-xs-6 return1">Return Date</span> </span>
+						<br>
+						<br>
+						<!-- <br> -->
+						<ul class="list-group">
+							<li class="list-group-item">CMOS VLSI Design: A Circuits and Systems Perspective, 4th Edition<span class="badge">12/3/18</span></li>
+							<li class="list-group-item">Introduction to Digital Systems, Moreno<span class="badge">12/3/18</span></li>
+							<li class="list-group-item">Let Us C, Yashavant P. Kanetkar<span class="badge">12/3/18</span></li>
+						</ul>
+					</div>
+				  	<div class="tab-pane fade" id="2a">
+						
+						<span class="col-md-12 col-xs-12 col-sm-12 "> <span class="col-sm-6 col-md-6 col-xs-6 issue1">Saved Books</span>  </span>
+						<br>
+						<br>
+						<!-- <br> -->
+						<ul class="list-group">
+							<li class="list-group-item">CMOS VLSI Design: A Circuits and Systems Perspective, 4th Edition</li>
+							<li class="list-group-item">Introduction to Digital Systems, Moreno</li>
+							<li class="list-group-item">Let Us C, Yashavant P. Kanetkar</li>
+						</ul>
+					</div>
+				  	
+				</div>
+			</div>
+			<span class="user-home1 col-md-8 col-sm-7">
+				<a href="index.html"  class="btn btn-primary btn-lg btn-block">Go to homepage</a>
+			</span>
+		</div>
+	</div>
+
+	<!-- ************Footer************ -->
+
+	<div class="container-fluid footer-row">
+		<div id="Copyright" class="text-center">
+			&copy; Copyright The LNM Institute of Information Technology 2019
+		</div>
+	</div>
+
+</body>
+</html>

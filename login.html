@@ -1,62 +1,41 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Login Page</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width initial-scale=1.0">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="style.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-</head>
-<body style="background:url(images/lsback.jpg);">
-	<div class="container-fluid">
-		<h2 style="text-align: center;">Login to your Account</h2>
-		<hr>
-		<div class="row">
-			<div class="col-sm-4"></div>
-			<div class="col-sm-4">
-        
-				<form class="form-horizontal">
-          <div class="form-group">
-           <!--  <label class="control-label col-sm-2" for="email">Email:</label> -->
-            <div class="col-sm-12">
-              <input type="email" class="form-control" id="email" placeholder="Email">
+    <head>
+        <title>Login to your account</title>
+        <meta charet="UTF-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="style1.css">
+        <link rel="icon" href="favicon.ico">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row wrapper">
+                <div class="col-sm-3 col-xs-2"></div>
+                <div class="col-sm-6 col-xs-8 formcontent">
+                    <div class="container-fluid">
+                        <h3><i class="fas fa-user"></i></h3>
+                        <form action="dashboard.html" method="POST">
+                            <input type="text" id="login" class="first" placeholder="E-Mail Id">
+                            <br>
+                            <input type="text" id="password" class="second" placeholder="Password">
+                            <br>
+                            <input type="submit" value="Log In" class="btn btn-info third">
+                            <br>
+                        </form>
+                        <hr>
+                        <div class="links">
+                            <div class="column"><a href="#">Forgot Password?</a></div>
+                            <div class="column"><a href="signup.html">Create an account</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3 col-xs-2"></div>
             </div>
-          </div>
-          <div class="form-group">
-           <!--  <label class="control-label col-sm-2" for="pwd">Password:</label> -->
-            <div class="col-sm-12">
-              <input type="password" class="form-control" id="pwd" placeholder="Password">
-            </div>
-          </div>
-          <div class="form-group">
-            <div class="col-sm-12">
-              <div class="checkbox">
-                <label><input type="checkbox"> Remember Me </label>
-                <span>&nbsp</span>
-                <a href="">
-                  <span> Forgot Password? </span>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="form-group">
-            <div class="col-sm-12">
-              <button id="log-in" type="submit" class="btn btn-default log-in">Log In</button>
-            </div>
-          </div>
-        </form> 
-        <hr>
-  
-        <div class="col-sm-12 col-xs-12 pull-right new-account container-fluid">
-          <a href="signup.html">
-            <button class="btn btn-default">Create New Account</button>
-          </a>
         </div>
-			</div>
-		  <div class="col-sm-4"></div>
-		</div>
-	</div>
-</body>
+    </body>
 </html>

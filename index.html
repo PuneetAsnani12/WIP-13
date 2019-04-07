@@ -8,11 +8,16 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="icon" href="favicon.ico">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-  <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+  	<script src="scroll_script.js"></script>
 </head>
 <body>
+
+	<!-- *********Scroll Button********* -->
+
+	<a href="#" id="scroll" style="display: none;"><span></span></a>
 
 	<!-- Navigation Bar -->
 
@@ -33,12 +38,12 @@
 				<li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
 			</ul>
 			<ul class="nav navbar-nav navbar-right">
-				<li><a href="#"><span class="glyphicon glyphicon-question-sign"></span> Help</a></li>
-				<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-info-sign"></span> 	About <span class="caret"></span></a>
+				<li><a href="#"><i class="fas fa-question-circle"></i> Help</a></li>
+				<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fas fa-info-circle"></i> About <span class="caret"></span></a>
 					<ul class="dropdown-menu">
-          	<li><a href="about/index.html">About Library</a></li>
-          	<li><a href="about/rules.html">Rules & Regulations</a></li>
-          	<li><a href="about/contact.html">Contact Us</a></li>
+					<li><a href="about/index.html">About Library</a></li>
+					<li><a href="about/rules.html">Rules & Regulations</a></li>
+					<li><a href="about/contact.html">Contact Us</a></li>
         	</ul>
       	</li>
 			</ul>
@@ -48,7 +53,7 @@
 
 	<!-- Jumbotron -->
 
-	<div class="jumbotron">
+	<!-- <div class="jumbotron">
 		<h1>Welcome to LNMIIT Library</h1>
 		<p><blockquote><p>A room without books is like a body without a soul.</p>
 		<footer>By Marcus Tullius Cicero</footer>
@@ -61,17 +66,26 @@
 				<button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
 			</div>
 		</form>
-	</div>
+	</div> -->
 
+	<div class="img-cntnr">
+		<div class="img-txt">
+			<h1><strong>Read Without Limits</strong></h1>
+		</div>
+		<div class="img-txt1">
+			<h3><p>Enjoy an unlimited* number of books, magazines and more.</p></h3>
+		</div>
+	</div>
+	
 	<!-- Books Categories -->
 
-	<div class="container-fluid">
+	<div class="container-fluid" style="background-image: linear-gradient(to bottom, #6a95b8, white)">
 		<div class="row">
 		<div class="col-md-2 col-sm-4 col-xs-6">
 			<div class="panel panel-default">
 				<div class="panel-heading">CSE Books</div>
 				<div class="panel-body">
-					<a href="#"><img src="images/cse.png" alt="CSE Books" style="max-width: 100%;"></a>
+					<a href="csbooks.html"><img src="images/cse.png" alt="CSE Books" style="max-width: 100%;"></a>
 				</div>
 			</div>
 		</div>
@@ -87,7 +101,7 @@
 			<div class="panel panel-default">
 				<div class="panel-heading">ECE Books</div>
 				<div class="panel-body">
-					<a href="#"><img src="images/ece.png" alt="ECE Books" style="max-width: 100%;"></a>
+					<a href="ecbooks.html"><img src="images/ece.png" alt="ECE Books" style="max-width: 100%;"></a>
 				</div>
 			</div>
 		</div>
@@ -115,9 +129,28 @@
 				</div>
 			</div>
 		</div>
-	</div> 
+	</div>
+	<!-- YouTube Video -->
+
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-sm-6" style="padding: 0;">
+				<div class="embed-responsive embed-responsive-16by9">
+					<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/4vIQON2fDWM" frameborder="0" allowfullscreen></iframe>
+				</div>
+			</div>
+			<div class="col-sm-6 music">
+				<h1>Music to help you study</h1>
+				<p>
+					For studying -  the sound helps you to maintain focus while studying, writing essays, reading, doing homework or any school assignment. 
+				</p>
+			</div>
+		</div>
 	</div>
 
+	</div>
+
+	
 <!-- Footer Begins -->
 
  <footer class="panel-footer">
@@ -175,12 +208,13 @@
 					</div>
 				</section>
 
-      </div>
-
-      <div id="Copyright" class="text-center">&copy; Copyright The LNM Institute of Information Technology 2019</div>
-
-    </div>
-
+	  </div>
+	</div>
+	<div class="container-fluid footer-row">
+		<div id="Copyright" class="text-center">
+			&copy; Copyright The LNM Institute of Information Technology 2019
+		</div>
+	</div>
   </footer>
 
   <!-- footer ends -->
