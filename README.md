@@ -12,12 +12,8 @@ User login: Students have to register themselves into the system to create an ac
 
 Search option: Students can search for books by entering the name of the book.
 
-Catalog: Our website contains a massive number of books arranged accroding to respective branches and categories. 
+Catalog: Our website contains a massive number of books arranged according to respective branches and categories. 
 
 Place order: The students can place order for the books and simultaneously the quantity of the book ordered will be decremented.
-
-View Order: Students can view number of books ordered
-
-Calculate Fine: The student can view the issue and expiry date for the book issued and can calculate fine.
 
 Help: If a user faces any difficulty, they can contact the developers/librarian.  
